@@ -1,21 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
 
 header {
     text-align: center;
-    background: #0074D9;
+    background: linear-gradient(90deg, #0074D9, #7FDBFF);
     color: white;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
-.hero {
-    padding: 2rem;
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
 }
 
 nav ul {
@@ -24,6 +28,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-top: 1rem;
 }
 
 nav ul li {
@@ -33,6 +38,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 section {
@@ -41,18 +47,18 @@ section {
 
 .proyectos {
     display: flex;
-    gap: 2rem;
     flex-wrap: wrap;
+    gap: 2rem;
     justify-content: center;
 }
 
 .proyecto {
-    border: 1px solid #ddd;
-    padding: 1rem;
     background: white;
     border-radius: 8px;
-    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
     text-align: center;
+    width: 300px;
 }
 
 .proyecto img {
@@ -66,3 +72,4 @@ footer {
     background: #0074D9;
     color: white;
 }
+
