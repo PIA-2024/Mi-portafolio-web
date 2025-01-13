@@ -73,3 +73,17 @@ footer {
     color: white;
 }
 
+.contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacto ul li {
+    margin: 0.5rem 0;
+}
+
+.contacto ul li a {
+    color: #0074D9;
+    text-decoration: none;
+    font-weight: bold;
+}
