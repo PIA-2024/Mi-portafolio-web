@@ -43,100 +43,26 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-section {
-    padding: 2rem;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #1e3c72;
-}
-
-/* Bienvenida Section */
-.inicio {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.inicio p {
-    font-size: 1.1rem;
-    margin: 0 auto;
-    max-width: 600px;
-}
-
-/* Proyectos Section */
-.proyectos {
-    padding: 2rem 0;
-}
-
-.proyectos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    justify-items: center;
-}
-
-.proyecto {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
-    transition: transform 0.2s;
-}
-
-.proyecto:hover {
-    transform: translateY(-5px);
-}
-
-.proyecto img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-.proyecto h3 {
-    font-size: 1.2rem;
-    margin: 1rem 0 0.5rem;
-}
-
-.proyecto p {
-    font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 1rem;
-}
-
-.proyecto a {
-    color: #1e3c72;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.proyecto a:hover {
-    text-decoration: underline;
-}
-
 /* Sobre mí Section */
 .sobre-mi-contenido {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
     max-width: 900px;
     margin: 0 auto;
+    text-align: left;
 }
 
 .sobre-mi-contenido img {
-    width: 200px;
+    width: 150px;
     border-radius: 50%;
     flex-shrink: 0;
 }
 
-.sobre-mi-contenido p {
+.sobre-mi-contenido div {
     flex: 1;
-    font-size: 1.1rem;
     line-height: 1.6;
 }
 
@@ -154,7 +80,7 @@ h2 {
 /* Contacto Section */
 .contacto {
     background-color: #f1f1f1;
-    padding: 2rem;
+    padding: 2rem 0;
     text-align: center;
 }
 
@@ -163,22 +89,25 @@ h2 {
     color: #1e3c72;
 }
 
-.contacto ul {
+.contacto-contenido ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
 }
 
-.contacto ul li a {
+.contacto-contenido ul li {
+    margin: 10px 0;
+}
+
+.contacto-contenido ul li a {
     color: #1e3c72;
     text-decoration: none;
     font-weight: bold;
 }
 
-.contacto ul li a:hover {
+.contacto-contenido ul li a:hover {
     text-decoration: underline;
 }
 
@@ -189,4 +118,8 @@ footer {
     background: #1e3c72;
     color: white;
     margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
 }
