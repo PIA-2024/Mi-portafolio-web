@@ -137,73 +137,64 @@ footer {
     padding: 10px 0;
     margin-top: 40px;
 }
-/* Estilos específicos para las páginas de proyectos */
-.proyecto-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
+/* Estilo para páginas de proyectos */
 .proyecto-header {
     background-color: #003366;
     color: white;
     padding: 20px;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 20px;
     text-align: center;
 }
 
 .proyecto-header h1 {
-    font-size: 24px;
     margin: 0;
+    font-size: 24px;
 }
 
-.proyecto-container {
-    text-align: center;
+.proyecto-main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.proyecto-container img {
+.proyecto-imagen img {
     width: 100%;
-    max-width: 500px;
-    height: auto;
-    margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.proyecto-container p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.proyecto-container ul {
+.proyecto-descripcion {
     text-align: left;
-    list-style: disc;
-    margin: 20px auto;
-    padding: 0 40px;
 }
 
-.proyecto-container ul li {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #555;
+.proyecto-descripcion p {
+    line-height: 1.6;
+}
+
+.proyecto-metodologia {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto-metodologia h2 {
+    color: #003366;
+}
+
+.proyecto-metodologia ul {
+    list-style: none;
+    padding: 0;
+}
+
+.proyecto-metodologia ul li {
     margin-bottom: 10px;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
+    padding: 10px 15px;
+    background-color: #0066cc;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -212,16 +203,7 @@ footer {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #004080;
 }
 
-/* Responsividad para las páginas de proyectos */
-@media (max-width: 768px) {
-    .proyecto-container img {
-        max-width: 100%;
-    }
-    .proyecto-main {
-        padding: 20px;
-    }
-}
 
