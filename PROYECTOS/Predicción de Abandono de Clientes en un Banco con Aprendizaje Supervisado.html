@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Análisis de Sentimiento en Redes Sociales</title>
+    <title>Predicción de Abandono de Clientes en un Banco</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../style-proyecto.css">
@@ -26,43 +26,53 @@
 
     <main class="proyecto-detalle">
         <section class="banner">
-            <h2>Análisis de Sentimiento en Redes Sociales</h2>
+            <h2>Predicción de Abandono de Clientes en un Banco</h2>
         </section>
         <section class="contenido">
-            <img src="../img/Predicción de Abandono de Clientes en un Banco con Aprendizaje Supervisado.jpg" alt="Predicción de Abandono de Clientes en un Banco con Aprendizaje Supervisado">
+            <img src="../img/churn-prediction.jpg" alt="Predicción de Abandono de Clientes en un Banco">
+            
             <h3>Descripción del Proyecto</h3>
             <p>
-                Este proyecto implementa técnicas de procesamiento de lenguaje natural (NLP) para clasificar sentimientos en redes sociales.
-                Se analizaron comentarios y opiniones de usuarios para identificar emociones y tendencias clave.
+                El objetivo de este proyecto es **predecir si un cliente abandonará el banco en el corto plazo** utilizando modelos de Machine Learning.
+                Se exploraron métodos de clasificación supervisada para optimizar la tasa de retención y reducir la pérdida de clientes.
             </p>
 
             <h3>Objetivos</h3>
             <ul>
-                <li>Clasificar sentimientos como positivos, negativos o neutros en comentarios de redes sociales.</li>
-                <li>Identificar tendencias y patrones en opiniones de los usuarios.</li>
-                <li>Ofrecer insights relevantes para la toma de decisiones estratégicas.</li>
+                <li>Desarrollar un modelo de predicción de abandono de clientes.</li>
+                <li>Analizar patrones y factores que influyen en la deserción.</li>
+                <li>Proporcionar insights para mejorar la retención de clientes.</li>
             </ul>
 
             <h3>Metodología</h3>
             <p>
-                Se recolectaron datos de redes sociales y se aplicaron técnicas de limpieza y preprocesamiento de texto.
-                Se entrenaron modelos de clasificación como Naive Bayes, SVM y redes neuronales, evaluados con métricas como precisión, recall y F1-score.
+                Se realizó un análisis exploratorio de datos (EDA) para entender las variables clave.
+                Luego, se implementaron técnicas de preprocesamiento como normalización y codificación de variables categóricas.
+                Se probaron múltiples modelos de clasificación incluyendo **Regresión Logística, Árboles de Decisión, Random Forest y XGBoost**.
+                Finalmente, se evaluó el rendimiento con métricas como **AUC-ROC, F1-score y Matriz de Confusión**.
             </p>
 
             <h3>Resultados</h3>
             <p>
-                Se logró una precisión del 85% en la clasificación de sentimientos, permitiendo identificar tendencias clave en la opinión pública.
-                Este modelo ha sido útil para marcas y empresas en la optimización de estrategias de comunicación digital.
+                El modelo de **Random Forest** obtuvo el mejor rendimiento con un **F1-score de 0.87** y un **AUC-ROC de 0.90**, demostrando alta precisión en la predicción del abandono de clientes.
             </p>
 
             <h3>Conclusiones</h3>
             <p>
-                El análisis de sentimiento es una herramienta clave para comprender la percepción de los usuarios en redes sociales.
-                La implementación de modelos NLP permite analizar grandes volúmenes de datos y extraer información valiosa en tiempo real.
+                Los factores más influyentes en la predicción del abandono fueron:
+                <ul>
+                    <li>Saldo de la cuenta.</li>
+                    <li>Tiempo de permanencia en el banco.</li>
+                    <li>Uso de productos financieros.</li>
+                </ul>
+                Se recomienda implementar estrategias de fidelización personalizadas para retener a los clientes en riesgo de abandono.
             </p>
 
             <h3>Repositorio en GitHub</h3>
-            <p>Puedes ver el código completo del proyecto en <a href="https://github.com/PIA-2024/Proyectos-Bootcamp/tree/main/Sprint%209" target="_blank">GitHub</a>.</p>
+            <p>
+                Puedes ver el código completo del proyecto en
+                <a href="https://github.com/PIA-2024/Proyectos-Bootcamp/tree/main/SPRINT_9" target="_blank">GitHub</a>.
+            </p>
 
             <a href="../index.html" class="btn">Volver al inicio</a>
         </section>
