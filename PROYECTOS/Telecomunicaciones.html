@@ -4,65 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Predicción de la Tasa de Cancelación de Clientes</title>
-    <link rel="stylesheet" href="/Mi-portafolio-web/style.css">
+    <link rel="stylesheet" href="style-proyecto.css">
 </head>
 <body>
+    <!-- Encabezado del Proyecto -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="/Mi-portafolio-web/index.html">Inicio</a></li>
-                <li><a href="#detalle">Detalles del Proyecto</a></li>
-                <li><a href="#metodologia">Metodología</a></li>
-                <li><a href="#conclusiones">Conclusiones</a></li>
-            </ul>
-        </nav>
         <h1>Predicción de la Tasa de Cancelación de Clientes</h1>
     </header>
 
-    <main>
-        <!-- Sección de Detalles -->
-        <section id="detalle" class="proyecto-detalle">
-            <div class="proyecto-imagen">
-                <img src="/Mi-portafolio-web/img/telecomunicaciones.jpg" alt="Proyecto Telecomunicaciones">
-            </div>
-            <div class="proyecto-descripcion">
-                <h2>Detalles del Proyecto</h2>
-                <p>
-                    Este proyecto tiene como objetivo predecir la tasa de cancelación de clientes en el sector de telecomunicaciones.
-                    Para ello, se analizaron datos históricos de contratos, uso de servicios y características demográficas. Utilizando
-                    técnicas de machine learning, se entrenaron modelos que permiten identificar patrones de comportamiento asociados a
-                    la cancelación de servicios.
-                </p>
-                <a href="https://github.com/PIA-2024/Proyecto-Final-Bootcamp" target="_blank" class="btn">Ver en GitHub</a>
-            </div>
-        </section>
+    <!-- Sección de Descripción -->
+    <section class="descripcion">
+        <h2>Descripción del Proyecto</h2>
+        <p>
+            Este proyecto utiliza técnicas de machine learning para predecir la pérdida de clientes en una empresa de telecomunicaciones. 
+            El análisis se centra en datos demográficos, uso de servicios y detalles de los contratos para identificar patrones de cancelación.
+        </p>
+    </section>
 
-        <!-- Sección de Metodología -->
-        <section id="metodologia" class="proyecto-metodologia">
-            <h2>Metodología</h2>
-            <ul>
-                <li><strong>Datos:</strong> Contratos, datos personales, servicios de internet y servicios telefónicos.</li>
-                <li><strong>Técnicas:</strong> Ingeniería de características, modelos de clasificación supervisada.</li>
-                <li><strong>Modelos evaluados:</strong> Random Forest, LightGBM, Regresión Logística.</li>
-                <li><strong>Herramientas:</strong> Python, Scikit-learn, LightGBM, Pandas, Matplotlib.</li>
-                <li><strong>Métrica principal:</strong> AUC-ROC (mejor modelo: LightGBM con 0.92).</li>
-            </ul>
-        </section>
+    <!-- Sección de Objetivos -->
+    <section class="objetivos">
+        <h2>Objetivos</h2>
+        <ul>
+            <li>Predecir con precisión la pérdida de clientes utilizando modelos de machine learning.</li>
+            <li>Identificar factores clave que contribuyen a la cancelación de contratos.</li>
+            <li>Optimizar estrategias de retención basadas en los resultados del modelo.</li>
+        </ul>
+    </section>
 
-        <!-- Sección de Conclusiones -->
-        <section id="conclusiones" class="proyecto-conclusiones">
-            <h2>Conclusiones</h2>
-            <p>
-                El modelo desarrollado con LightGBM permitió identificar los principales factores asociados a la cancelación de clientes,
-                lo que brinda a la empresa herramientas clave para implementar estrategias de retención. Las características más relevantes
-                incluyeron el tipo de contrato, antigüedad del cliente y uso de servicios adicionales. Este proyecto demuestra el valor del
-                análisis predictivo en la toma de decisiones estratégicas.
-            </p>
-        </section>
-    </main>
+    <!-- Sección de Metodología -->
+    <section class="metodologia">
+        <h2>Metodología</h2>
+        <p>
+            El proceso incluyó la limpieza y transformación de datos, análisis exploratorio, selección de características, y entrenamiento de modelos 
+            como regresión logística y XGBoost. Se utilizó AUC-ROC como métrica principal para evaluar el desempeño.
+        </p>
+    </section>
 
+    <!-- Sección de Resultados -->
+    <section class="resultados">
+        <h2>Resultados</h2>
+        <p>
+            Los modelos desarrollados mostraron que XGBoost logró una precisión del 87% y un AUC-ROC de 0.91. Este modelo ha permitido 
+            a la empresa priorizar clientes con mayor riesgo de cancelación y diseñar estrategias específicas para su retención.
+        </p>
+    </section>
+
+    <!-- Sección de Conclusiones -->
+    <section class="conclusiones">
+        <h2>Conclusiones</h2>
+        <p>
+            La predicción de la cancelación de clientes ha demostrado ser una herramienta valiosa para las empresas de telecomunicaciones. 
+            La implementación de este modelo no solo mejora la retención de clientes, sino que también optimiza los ingresos y la satisfacción del cliente.
+        </p>
+    </section>
+
+    <!-- Sección de Enlaces Relacionados -->
+    <section class="enlaces-relacionados">
+        <h2>Enlaces Relacionados</h2>
+        <ul>
+            <li><a href="https://github.com/PIA-2024/Proyecto-Final-Bootcamp" target="_blank">Repositorio del Proyecto en GitHub</a></li>
+        </ul>
+    </section>
+
+    <!-- Pie de Página -->
     <footer>
-        <p>© 2025 Pia Albiña Mura | Portafolio de Data Scientist</p>
+        <p>&copy; 2025 Pia Albiña Mura | Portafolio de Data Scientist</p>
     </footer>
 </body>
 </html>
