@@ -89,7 +89,7 @@ nav ul li a:hover {
 
 .proyecto img {
     width: 100%;
-    max-width: 250px; /* Tamaño ajustado */
+    max-width: 250px;
     height: 180px;
     object-fit: cover;
     border-radius: 8px;
@@ -129,8 +129,8 @@ nav ul li a:hover {
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
     min-height: 60vh; /* Asegura que ocupe al menos el 60% del viewport */
 }
 
@@ -138,13 +138,18 @@ nav ul li a:hover {
     font-size: 26px;
     color: #003366;
     margin-bottom: 20px;
+    text-align: center;
+    width: 100%; /* Asegura que el título ocupe todo el ancho */
 }
 
+/* Centrar el contenido dentro de la sección "Sobre mí" */
 .sobre-mi-contenido {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Centra verticalmente */
     max-width: 800px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -179,6 +184,7 @@ nav ul li a:hover {
     font-size: 22px;
     color: #003366;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .video-seccion video {
