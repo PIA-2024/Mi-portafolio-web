@@ -3,77 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predicción de la Tasa de Cancelación de Clientes</title>
-    <link rel="stylesheet" href="style-proyecto.css">
+    <title>Predicción de Cancelación de Clientes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style-proyecto.css">
 </head>
 <body>
-
-    <!-- Encabezado del Proyecto (Igual que en la página principal) -->
     <header>
         <div class="hero">
-            <h1>Predicción de la Tasa de Cancelación de Clientes</h1>
+            <h1>Pia Albiña Mura</h1>
+            <p>Ingeniera Civil Industrial & Data Scientist</p>
         </div>
         <nav>
             <ul>
-                <li><a href="/Mi-portafolio-web/index.html">Inicio</a></li>
-                <li><a href="/Mi-portafolio-web/index.html#proyectos">Proyectos</a></li>
-                <li><a href="/Mi-portafolio-web/index.html#sobre-mi">Sobre mí</a></li>
-                <li><a href="/Mi-portafolio-web/index.html#contacto">Contacto</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#proyectos">Proyectos</a></li>
+                <li><a href="../index.html#sobre-mi">Sobre mí</a></li>
+                <li><a href="../index.html#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Sección Imagen del Proyecto -->
-    <section class="proyecto-banner">
-        <img src="../img/telecomunicaciones.jpg" alt="Proyecto Telecomunicaciones">
-    </section>
+    <main class="proyecto-detalle">
+        <section class="banner">
+            <h2>Predicción de la Tasa de Cancelación de Clientes</h2>
+        </section>
+        <section class="contenido">
+            <img src="../img/telecomunicaciones.jpg" alt="Proyecto Telecomunicaciones">
+            <h3>Descripción del Proyecto</h3>
+            <p>
+                Este proyecto utiliza técnicas de machine learning para predecir la pérdida de clientes en una empresa de telecomunicaciones. 
+                El análisis se centra en datos demográficos, uso de servicios y detalles de los contratos para identificar patrones de cancelación.
+            </p>
 
-    <!-- Sección de Contenido Principal -->
-    <section class="contenido">
-        <h2>Descripción del Proyecto</h2>
-        <p>
-            Este proyecto utiliza técnicas de machine learning para predecir la pérdida de clientes en una empresa de telecomunicaciones. 
-            El análisis se centra en datos demográficos, uso de servicios y detalles de los contratos para identificar patrones de cancelación.
-        </p>
+            <h3>Objetivos</h3>
+            <ul>
+                <li>Predecir con precisión la pérdida de clientes utilizando modelos de machine learning.</li>
+                <li>Identificar factores clave que contribuyen a la cancelación de contratos.</li>
+                <li>Optimizar estrategias de retención basadas en los resultados del modelo.</li>
+            </ul>
 
-        <h2>Objetivos</h2>
-        <ul>
-            <li>Predecir con precisión la pérdida de clientes utilizando modelos de machine learning.</li>
-            <li>Identificar factores clave que contribuyen a la cancelación de contratos.</li>
-            <li>Optimizar estrategias de retención basadas en los resultados del modelo.</li>
-        </ul>
+            <h3>Metodología</h3>
+            <p>
+                El proceso incluyó la limpieza y transformación de datos, análisis exploratorio, selección de características y entrenamiento de modelos como regresión logística y XGBoost.
+                Se utilizó AUC-ROC como métrica principal para evaluar el desempeño.
+            </p>
 
-        <h2>Metodología</h2>
-        <p>
-            El proceso incluyó la limpieza y transformación de datos, análisis exploratorio, selección de características y entrenamiento de modelos 
-            como regresión logística y XGBoost. Se utilizó AUC-ROC como métrica principal para evaluar el desempeño.
-        </p>
+            <h3>Resultados</h3>
+            <p>
+                Los modelos desarrollados mostraron que XGBoost logró una precisión del 87% y un AUC-ROC de 0.91.
+                Este modelo ha permitido a la empresa priorizar clientes con mayor riesgo de cancelación y diseñar estrategias específicas para su retención.
+            </p>
 
-        <h2>Resultados</h2>
-        <p>
-            Los modelos desarrollados mostraron que XGBoost logró una precisión del 87% y un AUC-ROC de 0.91. Este modelo ha permitido 
-            a la empresa priorizar clientes con mayor riesgo de cancelación y diseñar estrategias específicas para su retención.
-        </p>
+            <h3>Conclusiones</h3>
+            <p>
+                La predicción de la cancelación de clientes ha demostrado ser una herramienta valiosa para las empresas de telecomunicaciones.
+                La implementación de este modelo no solo mejora la retención de clientes, sino que también optimiza los ingresos y la satisfacción del cliente.
+            </p>
 
-        <h2>Conclusiones</h2>
-        <p>
-            La predicción de la cancelación de clientes ha demostrado ser una herramienta valiosa para las empresas de telecomunicaciones. 
-            La implementación de este modelo no solo mejora la retención de clientes, sino que también optimiza los ingresos y la satisfacción del cliente.
-        </p>
+            <h3>Repositorio en GitHub</h3>
+            <p>Puedes ver el código completo del proyecto en <a href="https://github.com/PIA-2024/Proyecto-Final-Bootcamp" target="_blank">GitHub</a>.</p>
 
-        <!-- Sección de Enlace al Proyecto -->
-        <h2>Repositorio en GitHub</h2>
-        <p>
-            Puedes ver el código completo del proyecto en <a href="https://github.com/PIA-2024/Proyecto-Final-Bootcamp" target="_blank">GitHub</a>.
-        </p>
+            <a href="../index.html" class="btn">Volver al inicio</a>
+        </section>
+    </main>
 
-        <a href="/Mi-portafolio-web/index.html" class="btn-volver">Volver al inicio</a>
-    </section>
-
-    <!-- Pie de Página -->
     <footer>
-        <p>&copy; 2025 Pia Albiña Mura | Portafolio de Data Scientist</p>
+        <p>© 2025 Pia Albiña Mura | Portafolio de Data Scientist</p>
     </footer>
-
 </body>
 </html>
