@@ -6,7 +6,6 @@ body {
     box-sizing: border-box;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
 }
 
 /* Header Styles */
@@ -22,96 +21,36 @@ header h1 {
     margin: 10px 0;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #004080;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: background-color 0.3s;
-}
-
-header nav ul li a:hover {
-    background-color: #0059b3;
-}
-
-/* Main Section Styles */
-main {
-    padding: 20px;
-    max-width: 1200px;
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    max-width: 800px;
     margin: 0 auto;
-}
-
-.proyecto-imagen img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
+    background-color: white;
     border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.proyecto-descripcion {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    margin-bottom: 40px;
-}
-
-.proyecto-descripcion h2 {
-    color: #003366;
-    margin-bottom: 10px;
-}
-
-.proyecto-descripcion p {
-    margin: 0 0 20px;
-}
-
-.proyecto-descripcion .btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #0066cc;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.proyecto-descripcion .btn:hover {
-    background-color: #004080;
-}
-
-/* Conclusiones Section */
-.proyecto-conclusiones {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-}
-
-.proyecto-conclusiones h2 {
+section h2 {
+    font-size: 24px;
     color: #003366;
     margin-bottom: 15px;
+    text-align: center;
 }
 
-.proyecto-conclusiones p {
-    margin: 0;
+section p, section ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
 }
 
 /* Footer Styles */
@@ -119,6 +58,26 @@ footer {
     background-color: #003366;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    section p, section ul {
+        font-size: 14px;
+    }
 }
