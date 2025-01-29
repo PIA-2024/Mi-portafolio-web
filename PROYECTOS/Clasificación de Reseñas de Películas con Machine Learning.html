@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Recomendación de Películas</title>
+    <title>Clasificación de Reseñas de Películas con Machine Learning</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../style-proyecto.css">
@@ -26,39 +26,69 @@
 
     <main class="proyecto-detalle">
         <section class="banner">
-            <h2>Sistema de Recomendación de Películas</h2>
+            <h2>Clasificación de Reseñas de Películas con Machine Learning</h2>
         </section>
         <section class="contenido">
-            <img src="../img/sistema de recomendacion d epeliculas.jpg" alt="Recomendacion de peliculas">
-            <h3>Descripción del Proyecto</h3>
+            <img src="../img/movie_reviews_classification.jpg" alt="Clasificación de Reseñas de Películas">
+
+            <h3>Resumen del Proyecto</h3>
             <p>
-                Implementación de un sistema de recomendación basado en filtrado colaborativo y análisis de contenido. 
-                Este modelo personaliza las recomendaciones de películas según las preferencias y el historial de los usuarios.
+                Este proyecto tiene como objetivo clasificar automáticamente reseñas de películas en positivas o negativas utilizando modelos de machine learning y procesamiento de lenguaje natural (NLP). Se entrenaron distintos modelos para analizar el sentimiento de los textos y determinar la mejor estrategia para predecir correctamente si una reseña es favorable o desfavorable. El principal criterio de evaluación es la métrica F1-score, con un objetivo mínimo de 0.85.
             </p>
 
-            <h3>Objetivos</h3>
+            <h3>Metodología Utilizada</h3>
+            <h4>1. Exploración y Preparación de Datos</h4>
             <ul>
-                <li>Diseñar un sistema de recomendación eficiente y escalable.</li>
-                <li>Utilizar técnicas de filtrado colaborativo y análisis de contenido.</li>
-                <li>Proporcionar recomendaciones personalizadas basadas en datos previos de los usuarios.</li>
+                <li>Carga del dataset de reseñas de películas de IMDb.</li>
+                <li>Revisión de estructura del dataset y distribución de clases.</li>
+                <li>Análisis de valores nulos y eliminación de datos innecesarios.</li>
+                <li>Análisis de la cantidad de palabras en cada reseña y su impacto en la clasificación.</li>
             </ul>
 
-            <h3>Metodología</h3>
-            <p>
-                Se implementaron técnicas de filtrado colaborativo basado en usuarios y elementos, junto con análisis de contenido para evaluar similitudes entre las películas. 
-                Se evaluó el rendimiento del modelo utilizando métricas como RMSE y MAE.
-            </p>
+            <h4>2. Preprocesamiento de Texto</h4>
+            <p>Para transformar los textos en datos utilizables por los modelos de machine learning, se aplicaron técnicas de Procesamiento de Lenguaje Natural (NLP), tales como:</p>
+            <ul>
+                <li>Conversión del texto a minúsculas.</li>
+                <li>Eliminación de caracteres especiales y puntuación.</li>
+                <li>Tokenización de las palabras.</li>
+                <li>Eliminación de palabras vacías (stopwords).</li>
+                <li>Lematización para reducir las palabras a su forma raíz.</li>
+            </ul>
+
+            <h4>3. Vectorización</h4>
+            <p>Se utilizaron técnicas de vectorización para convertir el texto preprocesado en representaciones numéricas:</p>
+            <ul>
+                <li>Bag of Words (BoW).</li>
+                <li>TF-IDF (Term Frequency-Inverse Document Frequency).</li>
+            </ul>
+
+            <h4>4. Entrenamiento de Modelos</h4>
+            <p>Se entrenaron varios modelos de clasificación, incluyendo:</p>
+            <ul>
+                <li>Regresión Logística.</li>
+                <li>Máquinas de Soporte Vectorial (SVM).</li>
+                <li>Árboles de Decisión.</li>
+                <li>Random Forest.</li>
+                <li>Redes Neuronales.</li>
+            </ul>
+
+            <h4>5. Evaluación de Modelos</h4>
+            <p>Los modelos se evaluaron utilizando las siguientes métricas:</p>
+            <ul>
+                <li>Precisión.</li>
+                <li>Recall.</li>
+                <li>F1-score.</li>
+                <li>Matriz de confusión.</li>
+            </ul>
 
             <h3>Resultados</h3>
             <p>
-                El sistema de recomendación logró aumentar la precisión en un 85% en la predicción de preferencias del usuario.
-                Los modelos híbridos lograron una mejor personalización en las recomendaciones.
+                El modelo de Regresión Logística con vectorización TF-IDF alcanzó un F1-score de 0.87, superando el objetivo establecido de 0.85. Este modelo demostró ser efectivo en la clasificación de reseñas de películas en positivas y negativas.
             </p>
 
             <h3>Conclusiones</h3>
             <p>
-                La implementación de un sistema de recomendación mejora la experiencia del usuario en plataformas de contenido.
-                Se concluyó que los modelos híbridos proporcionan una mejor precisión que los enfoques tradicionales de filtrado colaborativo.
+                La combinación de técnicas de preprocesamiento de texto y modelos de machine learning permite clasificar eficazmente las reseñas de películas según su sentimiento. El modelo desarrollado puede ser utilizado para analizar grandes volúmenes de reseñas y proporcionar insights valiosos sobre la percepción de las películas por parte del público.
             </p>
 
             <h3>Repositorio en GitHub</h3>
