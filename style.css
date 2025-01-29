@@ -18,8 +18,8 @@ header {
 }
 
 header h1 {
-    margin: 10px 0;
     font-size: 28px;
+    margin: 10px 0;
 }
 
 header nav ul {
@@ -57,7 +57,7 @@ main {
 /* Proyecto Imagen */
 .proyecto-imagen img {
     width: 100%;
-    max-height: 400px;
+    max-height: 300px; /* Ajuste del tamaño máximo de la imagen */
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -98,26 +98,22 @@ main {
     background-color: #004080;
 }
 
-/* Metodología Section */
-.proyecto-metodologia {
+/* Conclusiones Section */
+.proyecto-conclusiones {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
 }
 
-.proyecto-metodologia h2 {
+.proyecto-conclusiones h2 {
     color: #003366;
     margin-bottom: 15px;
 }
 
-.proyecto-metodologia ul {
-    list-style: none;
-    padding: 0;
-}
-
-.proyecto-metodologia ul li {
-    margin-bottom: 10px;
+.proyecto-conclusiones p {
+    margin: 0;
 }
 
 /* Footer Styles */
@@ -127,26 +123,4 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 40px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .proyecto-imagen img {
-        max-height: 300px;
-    }
-
-    .proyecto-descripcion, .proyecto-metodologia {
-        padding: 15px;
-    }
-
-    .proyecto-metodologia ul li {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .proyecto-descripcion .btn {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
 }
