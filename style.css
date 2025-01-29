@@ -89,7 +89,7 @@ nav ul li a:hover {
 
 .proyecto img {
     width: 100%;
-    max-width: 250px; /* Reducción del tamaño de las imágenes */
+    max-width: 250px; /* Tamaño ajustado */
     height: 180px;
     object-fit: cover;
     border-radius: 8px;
@@ -154,7 +154,32 @@ nav ul li a:hover {
 .sobre-mi-contenido p {
     font-size: 16px;
     color: #444;
-    text-align: justify;
+    text-align: center; /* Centrado del texto */
+    margin-bottom: 20px;
+}
+
+.video-seccion {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.video-seccion h3 {
+    font-size: 22px;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.video-seccion video {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.video-seccion p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
 }
 
 /* Sección Contacto */
@@ -202,10 +227,19 @@ footer {
     .proyectos-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .sobre-mi-contenido img {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 @media (max-width: 480px) {
     .proyectos-grid {
         grid-template-columns: 1fr;
+    }
+
+    .video-seccion video {
+        max-width: 100%;
     }
 }
