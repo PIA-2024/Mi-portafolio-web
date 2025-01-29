@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Análisis Predictivo</title>
+    <title>Análisis Predictivo para la Exploración de Petróleo en OilyGiant</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../style-proyecto.css">
@@ -26,39 +26,59 @@
 
     <main class="proyecto-detalle">
         <section class="banner">
-            <h2>Análisis Predictivo</h2>
+            <h2>Análisis Predictivo para la Exploración de Petróleo en OilyGiant</h2>
         </section>
         <section class="contenido">
             <img src="../img/Análisis Predictivo para la Exploración de Petróleo en OilyGiant.jpg" alt="Análisis Predictivo para la Exploración de Petróleo en OilyGiant">
-            <h3>Descripción del Proyecto</h3>
+
+            <h3>Resumen del Proyecto</h3>
             <p>
-                Este proyecto se centra en la construcción de modelos predictivos para analizar patrones en datos y realizar predicciones.
-                Se aplicaron diversas técnicas para optimizar la toma de decisiones y mejorar el rendimiento de modelos de machine learning.
+                La empresa OilyGiant busca optimizar sus inversiones en exploración de petróleo utilizando modelos de machine learning para predecir qué regiones tienen mayores probabilidades de contener yacimientos rentables.
+            </p>
+            <p>
+                El objetivo principal del proyecto es desarrollar un modelo predictivo que, basado en datos geológicos y de perforación, pueda identificar las regiones más prometedoras para la extracción de petróleo, maximizando la rentabilidad y minimizando los riesgos financieros.
+            </p>
+            <p>
+                Se evaluaron distintos modelos de regresión para predecir la cantidad de barriles de petróleo extraídos en diferentes ubicaciones.
             </p>
 
-            <h3>Objetivos</h3>
+            <h3>Metodología Utilizada</h3>
+            <h4>1. Exploración y Análisis de Datos (EDA)</h4>
             <ul>
-                <li>Identificar patrones clave en los datos históricos.</li>
-                <li>Construir modelos de predicción basados en diferentes algoritmos de machine learning.</li>
-                <li>Optimizar el desempeño de los modelos mediante ajuste de hiperparámetros.</li>
+                <li>Carga y revisión del dataset con información geológica de distintas regiones.</li>
+                <li>Análisis de la distribución de las variables numéricas y detección de valores atípicos.</li>
+                <li>Identificación de correlaciones entre características geológicas y el volumen de petróleo extraído.</li>
+                <li>Comparación de datos entre distintas regiones para evaluar diferencias en la extracción.</li>
             </ul>
 
-            <h3>Metodología</h3>
-            <p>
-                Se realizaron análisis exploratorios de datos, ingeniería de características y selección de modelos. 
-                Se probaron algoritmos como regresión lineal, árboles de decisión y gradient boosting, comparando su rendimiento con métricas como RMSE y AUC-ROC.
-            </p>
+            <h4>2. Preprocesamiento de Datos</h4>
+            <ul>
+                <li>Manejo de valores nulos y datos inconsistentes.</li>
+                <li>Normalización y escalado de variables para mejorar el rendimiento de los modelos.</li>
+                <li>División del dataset en conjuntos de entrenamiento y prueba.</li>
+            </ul>
+
+            <h4>3. Desarrollo y Entrenamiento de Modelos</h4>
+            <ul>
+                <li>Entrenamiento de modelos de regresión lineal y de bosque aleatorio (Random Forest).</li>
+                <li>Optimización de hiperparámetros utilizando validación cruzada.</li>
+                <li>Evaluación de los modelos utilizando métricas como el RMSE y R².</li>
+            </ul>
+
+            <h4>4. Evaluación y Selección del Modelo</h4>
+            <ul>
+                <li>Comparación del rendimiento de los modelos entrenados.</li>
+                <li>Selección del modelo con mejor desempeño para la predicción de yacimientos rentables.</li>
+            </ul>
 
             <h3>Resultados</h3>
             <p>
-                Se logró mejorar la precisión del modelo en un 92% mediante la selección de características y ajuste de hiperparámetros.
-                El modelo más efectivo permitió reducir el error de predicción en un 18%.
+                El modelo de Random Forest demostró un rendimiento superior en comparación con la regresión lineal, logrando un RMSE más bajo y un R² más alto en el conjunto de prueba. Este modelo fue capaz de identificar con mayor precisión las regiones con mayor potencial de extracción rentable.
             </p>
 
             <h3>Conclusiones</h3>
             <p>
-                El análisis predictivo es clave para la optimización de procesos empresariales y toma de decisiones basada en datos.
-                La combinación de técnicas avanzadas permite generar modelos robustos y de alto desempeño.
+                La aplicación de técnicas de machine learning, específicamente el modelo de Random Forest, permite a OilyGiant optimizar sus decisiones de inversión en exploración petrolera, reduciendo riesgos financieros y enfocándose en las regiones con mayor probabilidad de éxito.
             </p>
 
             <h3>Repositorio en GitHub</h3>
@@ -73,3 +93,4 @@
     </footer>
 </body>
 </html>
+
