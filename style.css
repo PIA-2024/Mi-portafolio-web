@@ -127,11 +127,17 @@ nav ul li a:hover {
 .sobre-mi {
     text-align: center;
     padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    min-height: 60vh; /* Asegura que ocupe al menos el 60% del viewport */
 }
 
 .sobre-mi h2 {
     font-size: 26px;
     color: #003366;
+    margin-bottom: 20px;
 }
 
 .sobre-mi-contenido {
@@ -140,6 +146,7 @@ nav ul li a:hover {
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .sobre-mi-contenido img {
@@ -154,13 +161,18 @@ nav ul li a:hover {
 .sobre-mi-contenido p {
     font-size: 16px;
     color: #444;
-    text-align: center; /* Centrado del texto */
+    text-align: center;
     margin-bottom: 20px;
+    line-height: 1.5; /* Mejora la legibilidad del texto */
 }
 
+/* Sección del Video */
 .video-seccion {
     text-align: center;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .video-seccion h3 {
