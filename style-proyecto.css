@@ -8,7 +8,7 @@ body {
     color: #333;
 }
 
-/* Header (Mismo estilo que la página principal) */
+/* Header Styles */
 header {
     background-color: #003366;
     color: white;
@@ -16,19 +16,13 @@ header {
     padding: 20px 0;
 }
 
-header .hero h1 {
-    font-size: 28px;
-    margin: 10px 0;
-}
-
-/* Navigation Styles */
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
     background-color: #004080;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -39,99 +33,79 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 10px 15px;
-    transition: background-color 0.3s ease-in-out;
+    padding: 10px;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
     background-color: #0059b3;
 }
 
-/* Proyecto Banner (Imagen) */
-.proyecto-banner {
+/* Banner Styles */
+.banner {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    background-color: #f9f9f9;
-    padding: 20px;
 }
 
-.proyecto-banner img {
-    max-width: 60%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+.banner h2 {
+    margin: 0;
+    font-size: 28px;
 }
 
-/* Contenido del Proyecto */
-.contenido {
+/* Content Styles */
+.proyecto-detalle .contenido {
     max-width: 800px;
     margin: 30px auto;
-    padding: 30px;
+    padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
-.contenido h2 {
-    font-size: 24px;
+.proyecto-detalle img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.proyecto-detalle h3 {
     color: #003366;
+    margin-top: 20px;
+}
+
+.proyecto-detalle p {
+    line-height: 1.6;
     margin-bottom: 15px;
 }
 
-.contenido p, .contenido ul {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #444;
-    text-align: justify;
-}
-
-.contenido ul {
+.proyecto-detalle ul {
+    list-style: disc;
     padding-left: 20px;
-    list-style-type: square;
+    margin-bottom: 15px;
 }
 
-/* Botón Volver */
-.btn-volver {
+.proyecto-detalle .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 15px;
-    background-color: #0066cc;
-    color: white;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.btn-volver:hover {
     background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-/* Footer Styles */
+.proyecto-detalle .btn:hover {
+    background-color: #0059b3;
+}
+
+/* Footer */
 footer {
     background-color: #003366;
     color: white;
     text-align: center;
     padding: 15px 0;
-    margin-top: 40px;
     font-size: 14px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .contenido {
-        padding: 20px;
-    }
-
-    .proyecto-banner img {
-        max-width: 90%;
-    }
-
-    .contenido h2 {
-        font-size: 22px;
-    }
-
-    .contenido p, .contenido ul {
-        font-size: 14px;
-    }
 }
