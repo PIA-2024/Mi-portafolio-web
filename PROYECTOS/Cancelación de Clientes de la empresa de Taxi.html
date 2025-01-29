@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Análisis de Series Temporales</title>
+    <title>Cancelación de Clientes de la Empresa de Taxi</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../style-proyecto.css">
@@ -26,44 +26,65 @@
 
     <main class="proyecto-detalle">
         <section class="banner">
-            <h2>Análisis de Series Temporales para Pronóstico de Ventas</h2>
+            <h2>Cancelación de Clientes de la Empresa de Taxi</h2>
         </section>
         <section class="contenido">
-            <img src="../img/Cancelación de Clientes de la empresa de Taxi.jpg" alt="Cancelación de Clientes de la empresa de Taxi">
-            <h3>Descripción del Proyecto</h3>
+            <img src="../img/Cancelación de Clientes de la empresa de Taxi.jpg" alt="Cancelación de Clientes de la Empresa de Taxi">
+
+            <h3>Resumen del Proyecto</h3>
             <p>
-                Este proyecto utiliza modelos de series temporales para predecir ventas futuras y optimizar la toma de decisiones estratégicas.
-                Se analizaron datos históricos para identificar patrones de tendencias y estacionalidad en las ventas.
+                El objetivo de este proyecto es analizar los patrones de viaje de Sweet Lift Taxi, una empresa de transporte por aplicación, y desarrollar un modelo de machine learning que permita predecir la demanda de viajes en función de diversas variables. Se busca entender qué factores influyen en la cantidad de viajes y cómo optimizar la asignación de conductores para mejorar la eficiencia del servicio.
             </p>
 
-            <h3>Objetivos</h3>
+            <h3>Metodología Utilizada</h3>
+            <h4>1. Exploración y Limpieza de Datos</h4>
             <ul>
-                <li>Prever la demanda futura de productos utilizando modelos de series temporales.</li>
-                <li>Identificar tendencias y patrones estacionales en los datos de ventas.</li>
-                <li>Optimizar la planificación de inventario y estrategias de marketing.</li>
+                <li>Carga del conjunto de datos de viajes y revisión de su estructura.</li>
+                <li>Análisis de valores nulos y tratamiento de datos inconsistentes.</li>
+                <li>Conversión de formatos de fechas y variables categóricas.</li>
+                <li>Generación de nuevas variables relevantes para el análisis (e.g., día de la semana, hora del día).</li>
             </ul>
 
-            <h3>Metodología</h3>
-            <p>
-                Se aplicaron modelos ARIMA, SARIMA y Prophet para evaluar el comportamiento de los datos de ventas.
-                Se realizaron comparaciones de rendimiento utilizando métricas como MAE y RMSE.
-            </p>
+            <h4>2. Análisis Exploratorio de Datos (EDA)</h4>
+            <ul>
+                <li>Distribución de la cantidad de viajes por día y por hora.</li>
+                <li>Identificación de patrones temporales en la demanda.</li>
+                <li>Análisis del impacto de factores externos, como el clima o eventos especiales.</li>
+                <li>Visualización de tendencias y correlaciones entre variables.</li>
+            </ul>
+
+            <h4>3. Preprocesamiento y Transformación de Datos</h4>
+            <ul>
+                <li>Normalización y escalado de variables numéricas.</li>
+                <li>Codificación de variables categóricas.</li>
+                <li>División del conjunto de datos en entrenamiento y prueba.</li>
+            </ul>
+
+            <h4>4. Desarrollo del Modelo</h4>
+            <ul>
+                <li>Selección de modelos de regresión y series temporales.</li>
+                <li>Entrenamiento y ajuste de hiperparámetros.</li>
+                <li>Evaluación del rendimiento del modelo utilizando métricas adecuadas.</li>
+            </ul>
+
+            <h4>5. Validación y Pruebas</h4>
+            <ul>
+                <li>Validación cruzada para asegurar la generalización del modelo.</li>
+                <li>Pruebas con datos no vistos para evaluar la precisión de las predicciones.</li>
+            </ul>
 
             <h3>Resultados</h3>
             <p>
-                Los modelos lograron predicciones precisas con un RMSE del 12.5% en el mejor escenario.
-                La implementación del modelo permitió a la empresa mejorar la planificación de stock y reducir pérdidas por exceso de inventario.
+                Se logró desarrollar un modelo predictivo que estima con precisión la demanda de viajes, permitiendo a Sweet Lift Taxi optimizar la asignación de conductores y mejorar la satisfacción del cliente.
             </p>
 
             <h3>Conclusiones</h3>
             <p>
-                La predicción de series temporales es una herramienta clave para optimizar la toma de decisiones empresariales.
-                Este modelo ayuda a reducir costos operativos y mejorar la eficiencia en la gestión de inventarios.
+                El análisis de datos y la aplicación de modelos de machine learning pueden proporcionar insights valiosos para empresas de transporte, ayudándolas a anticipar la demanda y optimizar sus operaciones.
             </p>
 
             <h3>Repositorio en GitHub</h3>
-            <p>Puedes ver el código completo del proyecto en <a href="https://github.com/PIA-2024/Proyectos-Bootcamp/blob/main/SPRINT_13" target="_blank">GitHub</a>.</p>
-
+            <p>Puedes ver el código completo del proyecto en <a href="https://github.com/PIA-2024/Proyectos-Bootcamp/tree/main/SPRINT_13" target="_blank">GitHub</a>.</p>
 
             <a href="../index.html" class="btn">Volver al inicio</a>
         </section>
