@@ -5,6 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 /* Header Styles */
@@ -15,14 +16,19 @@ header {
     padding: 20px 0;
 }
 
+header h1 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
 /* Navigation Styles */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     background-color: #004080;
-    margin: 0;
 }
 
 nav ul li {
@@ -33,19 +39,49 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #0059b3;
+}
+
+/* Sección de Bienvenida */
+.inicio {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.inicio h2 {
+    font-size: 24px;
+    color: #003366;
 }
 
 /* Proyectos Styles */
+.proyectos {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.proyectos h2 {
+    font-size: 26px;
+    color: #003366;
+}
+
 .proyectos-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .proyecto {
     background-color: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -53,8 +89,102 @@ nav ul li a {
 
 .proyecto img {
     width: 100%;
+    max-width: 250px; /* Reducción del tamaño de las imágenes */
+    height: 180px;
+    object-fit: cover;
     border-radius: 8px;
-    height: auto;
+    margin-bottom: 10px;
+}
+
+.proyecto h3 {
+    font-size: 18px;
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.proyecto p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.proyecto a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #0066cc;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.proyecto a:hover {
+    background-color: #004080;
+}
+
+/* Sección Sobre Mí */
+.sobre-mi {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.sobre-mi h2 {
+    font-size: 26px;
+    color: #003366;
+}
+
+.sobre-mi-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobre-mi-contenido img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #003366;
+    margin-bottom: 20px;
+}
+
+.sobre-mi-contenido p {
+    font-size: 16px;
+    color: #444;
+    text-align: justify;
+}
+
+/* Sección Contacto */
+.contacto {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contacto h2 {
+    font-size: 26px;
+    color: #003366;
+}
+
+.contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacto ul li {
+    margin-bottom: 10px;
+}
+
+.contacto ul li a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.contacto ul li a:hover {
+    color: #004080;
 }
 
 /* Footer Styles */
@@ -62,5 +192,20 @@ footer {
     background-color: #003366;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .proyectos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
 }
