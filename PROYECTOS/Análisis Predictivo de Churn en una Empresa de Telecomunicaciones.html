@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predicción de Cancelación de Clientes</title>
+    <title>Análisis Predictivo de Churn en una Empresa de Telecomunicaciones</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../style-proyecto.css">
@@ -26,39 +26,52 @@
 
     <main class="proyecto-detalle">
         <section class="banner">
-            <h2>Predicción de la Tasa de Cancelación de Clientes</h2>
+            <h2>Análisis Predictivo de Churn en una Empresa de Telecomunicaciones</h2>
         </section>
         <section class="contenido">
             <img src="../img/Análisis Predictivo de Churn en una Empresa de Telecomunicaciones.jpg" alt="Análisis Predictivo de Churn en una Empresa de Telecomunicaciones">
-            <h3>Descripción del Proyecto</h3>
+
+            <h3>Resumen del Proyecto</h3>
             <p>
-                Este proyecto utiliza técnicas de machine learning para predecir la pérdida de clientes en una empresa de telecomunicaciones. 
-                El análisis se centra en datos demográficos, uso de servicios y detalles de los contratos para identificar patrones de cancelación.
+                Este proyecto tiene como objetivo principal predecir la deserción de clientes (churn) en una empresa de telecomunicaciones. Mediante técnicas de Análisis Exploratorio de Datos (EDA) y Modelado Predictivo, se busca identificar los factores que influyen en la decisión de un cliente de abandonar el servicio y desarrollar un modelo que permita predecir dicha deserción con alta precisión.
             </p>
 
-            <h3>Objetivos</h3>
+            <h3>Metodología Utilizada</h3>
+            <h4>1. Exploración y Análisis de Datos (EDA)</h4>
             <ul>
-                <li>Predecir con precisión la pérdida de clientes utilizando modelos de machine learning.</li>
-                <li>Identificar factores clave que contribuyen a la cancelación de contratos.</li>
-                <li>Optimizar estrategias de retención basadas en los resultados del modelo.</li>
+                <li><strong>Carga del Dataset:</strong> Se utilizó un conjunto de datos proporcionado por la empresa, que incluye información demográfica de los clientes, detalles de sus contratos, métodos de pago y patrones de consumo de servicios.</li>
+                <li><strong>Análisis Descriptivo:</strong> Se realizaron análisis univariados y bivariados para comprender la distribución de las variables y sus relaciones con la variable objetivo (churn).</li>
+                <li><strong>Visualización de Datos:</strong> Se emplearon gráficos de barras, histogramas y diagramas de caja para identificar patrones y posibles anomalías en los datos.</li>
             </ul>
 
-            <h3>Metodología</h3>
-            <p>
-                El proceso incluyó la limpieza y transformación de datos, análisis exploratorio, selección de características y entrenamiento de modelos como regresión logística y XGBoost.
-                Se utilizó AUC-ROC como métrica principal para evaluar el desempeño.
-            </p>
+            <h4>2. Preprocesamiento de Datos</h4>
+            <ul>
+                <li><strong>Manejo de Valores Nulos:</strong> Se identificaron y trataron los valores faltantes en el conjunto de datos.</li>
+                <li><strong>Codificación de Variables Categóricas:</strong> Se aplicaron técnicas de codificación para transformar variables categóricas en variables numéricas.</li>
+                <li><strong>Escalado de Variables:</strong> Se normalizaron las variables numéricas para garantizar un rendimiento óptimo de los modelos.</li>
+            </ul>
+
+            <h4>3. Modelado Predictivo</h4>
+            <ul>
+                <li><strong>Selección de Modelos:</strong> Se evaluaron múltiples algoritmos de clasificación, incluyendo Regresión Logística, Árboles de Decisión y Bosques Aleatorios.</li>
+                <li><strong>Entrenamiento y Validación:</strong> Se entrenaron los modelos utilizando el conjunto de entrenamiento y se validaron con el conjunto de prueba, empleando técnicas de validación cruzada para asegurar la generalización de los resultados.</li>
+                <li><strong>Evaluación de Modelos:</strong> Se utilizaron métricas como la precisión, recall, F1-score y el área bajo la curva ROC para evaluar el desempeño de los modelos.</li>
+            </ul>
+
+            <h4>4. Interpretación de Resultados</h4>
+            <ul>
+                <li><strong>Importancia de Variables:</strong> Se analizaron las características más influyentes en la predicción del churn.</li>
+                <li><strong>Análisis de Errores:</strong> Se estudiaron los casos en los que el modelo falló para identificar posibles mejoras.</li>
+            </ul>
 
             <h3>Resultados</h3>
             <p>
-                Los modelos desarrollados mostraron que XGBoost logró una precisión del 87% y un AUC-ROC de 0.91.
-                Este modelo ha permitido a la empresa priorizar clientes con mayor riesgo de cancelación y diseñar estrategias específicas para su retención.
+                El modelo de Bosques Aleatorios obtuvo una precisión del 85% en la predicción de la deserción de clientes. Las variables más influyentes incluyeron la duración del contrato, el método de pago y el uso de servicios adicionales.
             </p>
 
             <h3>Conclusiones</h3>
             <p>
-                La predicción de la cancelación de clientes ha demostrado ser una herramienta valiosa para las empresas de telecomunicaciones.
-                La implementación de este modelo no solo mejora la retención de clientes, sino que también optimiza los ingresos y la satisfacción del cliente.
+                La implementación de modelos predictivos permite a las empresas de telecomunicaciones identificar proactivamente a los clientes con mayor riesgo de deserción y desarrollar estrategias de retención más efectivas. Este enfoque basado en datos facilita la toma de decisiones informadas y mejora la satisfacción del cliente.
             </p>
 
             <h3>Repositorio en GitHub</h3>
@@ -73,3 +86,4 @@
     </footer>
 </body>
 </html>
+
