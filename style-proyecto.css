@@ -8,7 +8,7 @@ body {
     color: #333;
 }
 
-/* Header Styles */
+/* Header (Mismo estilo que la página principal) */
 header {
     background-color: #003366;
     color: white;
@@ -16,78 +16,95 @@ header {
     padding: 20px 0;
 }
 
-header h1 {
+header .hero h1 {
     font-size: 28px;
     margin: 10px 0;
 }
 
-/* Sección General */
-section {
-    padding: 40px 20px;
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #004080;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #0059b3;
+}
+
+/* Proyecto Banner (Imagen) */
+.proyecto-banner {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.proyecto-banner img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido del Proyecto */
+.contenido {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 30px auto;
+    padding: 30px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-section h2 {
+.contenido h2 {
     font-size: 24px;
     color: #003366;
     margin-bottom: 15px;
-    text-align: center;
-    font-weight: bold;
 }
 
-section p, section ul {
+.contenido p, .contenido ul {
     font-size: 16px;
     line-height: 1.6;
     color: #444;
     text-align: justify;
 }
 
-section ul {
+.contenido ul {
     padding-left: 20px;
     list-style-type: square;
 }
 
-section ul li {
-    margin-bottom: 10px;
-}
-
-/* Imagen del Proyecto */
-.proyecto-imagen {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.proyecto-imagen img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Enlaces Relacionados */
-.enlaces-relacionados ul {
-    list-style: none;
-    padding: 0;
-}
-
-.enlaces-relacionados ul li {
-    margin: 10px 0;
-}
-
-.enlaces-relacionados ul li a {
+/* Botón Volver */
+.btn-volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #0066cc;
+    color: white;
     text-decoration: none;
-    color: #0066cc;
+    border-radius: 5px;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.enlaces-relacionados ul li a:hover {
-    color: #004080;
+.btn-volver:hover {
+    background-color: #004080;
 }
 
 /* Footer Styles */
@@ -102,19 +119,19 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    section {
+    .contenido {
         padding: 20px;
     }
 
-    header h1 {
-        font-size: 24px;
+    .proyecto-banner img {
+        max-width: 90%;
     }
 
-    section h2 {
+    .contenido h2 {
         font-size: 22px;
     }
 
-    section p, section ul {
+    .contenido p, .contenido ul {
         font-size: 14px;
     }
 }
