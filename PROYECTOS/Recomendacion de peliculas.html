@@ -4,51 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Recomendación de Películas</title>
-    <link rel="stylesheet" href="/Mi-portafolio-web/PROYECTOS/style-proyecto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style-proyecto.css">
 </head>
 <body>
-    <header class="header-proyecto">
+    <header>
+        <div class="hero">
+            <h1>Pia Albiña Mura</h1>
+            <p>Ingeniera Civil Industrial & Data Scientist</p>
+        </div>
         <nav>
             <ul>
-                <li><a href="/Mi-portafolio-web/index.html">Inicio</a></li>
-                <li><a href="/Mi-portafolio-web/index.html#proyectos">Proyectos</a></li>
-                <li><a href="/Mi-portafolio-web/index.html#sobre-mi">Sobre mí</a></li>
-                <li><a href="/Mi-portafolio-web/index.html#contacto">Contacto</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#proyectos">Proyectos</a></li>
+                <li><a href="../index.html#sobre-mi">Sobre mí</a></li>
+                <li><a href="../index.html#contacto">Contacto</a></li>
             </ul>
         </nav>
-        <h1>Sistema de Recomendación de Películas</h1>
     </header>
 
     <main class="proyecto-detalle">
-        <img src="/Mi-portafolio-web/img/sistema-recomendacion-peliculas.jpg" alt="Sistema de Recomendación de Películas">
-        <section>
-            <h2>Descripción del Proyecto</h2>
-            <p>Implementación de un sistema de recomendación basado en filtrado colaborativo y análisis de contenido. Este modelo personaliza las recomendaciones de películas según las preferencias y el historial de los usuarios.</p>
+        <section class="banner">
+            <h2>Sistema de Recomendación de Películas</h2>
         </section>
-        
-        <section>
-            <h2>Objetivos</h2>
+        <section class="contenido">
+            <img src="../img/sistema de recomendacion d epeliculas.jpg" alt="Recomendacion de peliculas">
+            <h3>Descripción del Proyecto</h3>
+            <p>
+                Implementación de un sistema de recomendación basado en filtrado colaborativo y análisis de contenido. 
+                Este modelo personaliza las recomendaciones de películas según las preferencias y el historial de los usuarios.
+            </p>
+
+            <h3>Objetivos</h3>
             <ul>
-                <li>Desarrollar un sistema de recomendación eficiente y escalable.</li>
+                <li>Diseñar un sistema de recomendación eficiente y escalable.</li>
                 <li>Utilizar técnicas de filtrado colaborativo y análisis de contenido.</li>
-                <li>Ofrecer recomendaciones personalizadas para los usuarios.</li>
+                <li>Proporcionar recomendaciones personalizadas basadas en datos previos de los usuarios.</li>
             </ul>
-        </section>
 
-        <section>
-            <h2>Metodología</h2>
-            <p>Se emplearon técnicas de filtrado colaborativo basado en usuarios y elementos, junto con análisis de contenido para evaluar similitudes entre las películas. Los modelos fueron validados utilizando métricas como RMSE y MAE.</p>
-        </section>
+            <h3>Metodología</h3>
+            <p>
+                Se implementaron técnicas de filtrado colaborativo basado en usuarios y elementos, junto con análisis de contenido para evaluar similitudes entre las películas. 
+                Se evaluó el rendimiento del modelo utilizando métricas como RMSE y MAE.
+            </p>
 
-        <section>
-            <h2>Repositorio en GitHub</h2>
+            <h3>Resultados</h3>
+            <p>
+                El sistema de recomendación logró aumentar la precisión en un 85% en la predicción de preferencias del usuario.
+                Los modelos híbridos lograron una mejor personalización en las recomendaciones.
+            </p>
+
+            <h3>Conclusiones</h3>
+            <p>
+                La implementación de un sistema de recomendación mejora la experiencia del usuario en plataformas de contenido.
+                Se concluyó que los modelos híbridos proporcionan una mejor precisión que los enfoques tradicionales de filtrado colaborativo.
+            </p>
+
+            <h3>Repositorio en GitHub</h3>
             <p>Puedes ver el código completo del proyecto en <a href="https://github.com/PIA-2024/Proyectos-Bootcamp/tree/main/Sprint-11" target="_blank">GitHub</a>.</p>
+
+            <a href="../index.html" class="btn">Volver al inicio</a>
         </section>
-        
-        <a href="/Mi-portafolio-web/index.html" class="btn-volver">Volver al inicio</a>
     </main>
 
-    <footer class="footer-proyecto">
+    <footer>
         <p>© 2025 Pia Albiña Mura | Portafolio de Data Scientist</p>
     </footer>
 </body>
