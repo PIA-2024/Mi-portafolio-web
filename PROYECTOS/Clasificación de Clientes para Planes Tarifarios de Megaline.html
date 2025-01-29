@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelos Predictivos</title>
+    <title>Clasificación de Clientes para Planes Tarifarios de Megaline</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../style-proyecto.css">
@@ -26,39 +26,58 @@
 
     <main class="proyecto-detalle">
         <section class="banner">
-            <h2>Modelos Predictivos</h2>
+            <h2>Clasificación de Clientes para Planes Tarifarios de Megaline</h2>
         </section>
         <section class="contenido">
             <img src="../img/Clasificación de Clientes para Planes Tarifarios de Megaline.jpg" alt="Clasificación de Clientes para Planes Tarifarios de Megaline">
-            <h3>Descripción del Proyecto</h3>
+
+            <h3>Resumen del Proyecto</h3>
             <p>
-                Desarrollo de modelos de machine learning para predecir comportamientos futuros basados en datos históricos.
-                Se implementaron algoritmos avanzados para mejorar la toma de decisiones y optimizar procesos empresariales.
+                Megaline, una compañía de telefonía móvil, busca optimizar la migración de sus clientes hacia nuevos planes tarifarios. Actualmente, muchos usuarios continúan utilizando planes heredados, lo que representa un desafío en la adopción de los planes Smart y Ultra.
+            </p>
+            <p>
+                Este proyecto tiene como objetivo desarrollar un modelo de clasificación que, basado en el comportamiento de los clientes, recomiende el plan más adecuado.
+            </p>
+            <p>
+                El modelo se evaluará utilizando la métrica de exactitud (accuracy) y debe alcanzar un mínimo de 0.75 para ser considerado satisfactorio.
             </p>
 
-            <h3>Objetivos</h3>
+            <h3>Metodología Utilizada</h3>
+            <h4>1. Exploración y Análisis de Datos (EDA)</h4>
             <ul>
-                <li>Construir modelos de regresión y clasificación para predecir eventos futuros.</li>
-                <li>Optimizar decisiones de negocio mediante el uso de análisis predictivo.</li>
-                <li>Implementar y evaluar múltiples modelos para determinar el mejor desempeño.</li>
+                <li>Carga del dataset con información del uso de servicios por los clientes.</li>
+                <li>Análisis de la distribución de variables numéricas y categóricas.</li>
+                <li>Identificación de valores nulos y estrategia de imputación.</li>
+                <li>Análisis de correlación entre variables y la variable objetivo (Plan: Smart o Ultra).</li>
             </ul>
 
-            <h3>Metodología</h3>
-            <p>
-                Se realizó preprocesamiento de datos, selección de características y evaluación de modelos como regresión logística,
-                árboles de decisión y bosques aleatorios. Se compararon los resultados mediante métricas como precisión, recall y RMSE.
-            </p>
+            <h4>2. Preprocesamiento de Datos</h4>
+            <ul>
+                <li>Conversión de datos categóricos mediante One-Hot Encoding o Label Encoding.</li>
+                <li>Normalización de variables numéricas para mejorar la eficiencia del modelo.</li>
+                <li>Separación del dataset en conjuntos de entrenamiento y prueba.</li>
+            </ul>
+
+            <h4>3. Entrenamiento de Modelos de Clasificación</h4>
+            <ul>
+                <li>Entrenamiento de modelos como Regresión Logística, Árboles de Decisión y Random Forest.</li>
+                <li>Optimización de hiperparámetros para mejorar el rendimiento.</li>
+            </ul>
+
+            <h4>4. Evaluación del Modelo</h4>
+            <ul>
+                <li>Evaluación de los modelos utilizando la métrica de exactitud (accuracy).</li>
+                <li>Selección del modelo con mejor rendimiento para recomendaciones futuras.</li>
+            </ul>
 
             <h3>Resultados</h3>
             <p>
-                Se logró un aumento del 90% en la precisión de predicciones mediante el ajuste de hiperparámetros.
-                Los modelos entrenados demostraron mejoras significativas en la toma de decisiones estratégicas.
+                El modelo de Random Forest alcanzó una exactitud del 78%, superando el umbral establecido de 75%. Este modelo demostró ser efectivo en la clasificación de clientes para recomendarles el plan más adecuado.
             </p>
 
             <h3>Conclusiones</h3>
             <p>
-                La implementación de modelos predictivos permite mejorar la eficiencia y optimizar recursos en distintos sectores.
-                La combinación de diferentes técnicas mejora la capacidad de predicción y reduce la incertidumbre en el análisis de datos.
+                La implementación de modelos de clasificación permite a Megaline identificar y recomendar planes tarifarios óptimos para sus clientes, facilitando la migración desde planes heredados hacia opciones más modernas y beneficiosas tanto para la empresa como para los usuarios.
             </p>
 
             <h3>Repositorio en GitHub</h3>
