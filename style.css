@@ -18,16 +18,17 @@ header {
 }
 
 header h1 {
+    margin: 10px 0;
     font-size: 28px;
-    margin: 0;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0 0;
+    margin: 0;
     display: flex;
     justify-content: center;
+    background-color: #004080;
 }
 
 header nav ul li {
@@ -38,11 +39,12 @@ header nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    transition: color 0.3s;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
 }
 
 header nav ul li a:hover {
-    color: #ffcc00;
+    background-color: #0059b3;
 }
 
 /* Main Section Styles */
@@ -59,15 +61,22 @@ main {
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Proyecto Descripción */
 .proyecto-descripcion {
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
+    margin-bottom: 40px;
+}
+
+.proyecto-descripcion h2 {
+    color: #003366;
+    margin-bottom: 10px;
 }
 
 .proyecto-descripcion p {
@@ -91,8 +100,7 @@ main {
 
 /* Metodología Section */
 .proyecto-metodologia {
-    margin-top: 40px;
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -119,18 +127,12 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 40px;
-    font-size: 14px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 24px;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
+    .proyecto-imagen img {
+        max-height: 300px;
     }
 
     .proyecto-descripcion, .proyecto-metodologia {
@@ -143,10 +145,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .proyecto-imagen img {
-        max-height: 300px;
-    }
-
     .proyecto-descripcion .btn {
         padding: 8px 12px;
         font-size: 14px;
